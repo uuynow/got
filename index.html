@@ -3619,6 +3619,96 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
     #keyword .tab-copy p { font-size:14px!important; line-height:1.75!important; }
   }
 </style>
+<style id="keyword-and-stay-description-type-match">
+  #keyword .tab-copy p,
+  #stay .stay-card .stay-description {
+    color:#53534d!important;
+    font-family:'Gowun Batang','Noto Serif KR',serif!important;
+    font-size:15px!important;
+    font-weight:400!important;
+    line-height:1.8!important;
+    letter-spacing:-.015em!important;
+  }
+  @media(max-width:760px) {
+    #keyword .tab-copy p,
+    #stay .stay-card .stay-description { font-size:14px!important; }
+  }
+</style>
+<style id="keyword-and-stay-title-face-color-match">
+  #keyword .tab-copy h3,
+  #stay .stay-card h3 {
+    color:#233a4a!important;
+    font-family:'Gowun Batang','Noto Serif KR',serif!important;
+    font-style:normal!important;
+    font-weight:400!important;
+  }
+</style>
+<style id="keyword-and-stay-price-type-match">
+  #keyword .tab-copy .keyword-price-line,
+  #stay .stay-card .price-row > .price {
+    color:#46545b!important;
+    font-family:'Noto Sans KR',sans-serif!important;
+    font-size:13px!important;
+    font-style:normal!important;
+    font-weight:400!important;
+    line-height:2!important;
+  }
+  @media(max-width:760px) {
+    #keyword .tab-copy .keyword-price-line,
+    #stay .stay-card .price-row > .price { font-size:12px!important; }
+  }
+</style>
+<style id="keyword-and-stay-location-type-match">
+  #keyword .tab-copy .details > span:first-child,
+  #stay .stay-card .meta > span:first-child {
+    color:#46545b!important;
+    font-family:'Noto Sans KR',sans-serif!important;
+    font-size:13px!important;
+    font-style:normal!important;
+    font-weight:400!important;
+    line-height:2!important;
+  }
+  @media(max-width:760px) {
+    #keyword .tab-copy .details > span:first-child,
+    #stay .stay-card .meta > span:first-child { font-size:12px!important; }
+  }
+</style>
+<style id="stay-price-house-icon-color-match">
+  #stay .stay-card .price-row > .price::before { color:#46545b!important; }
+</style>
+<style id="keyword-location-pin-icon">
+  #keyword .tab-copy .keyword-location-pin {
+    display:inline-block;
+    width:13px;
+    height:15px;
+    margin-right:2px;
+    vertical-align:-3px;
+    fill:none;
+    stroke:currentColor;
+    stroke-width:1.6;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+</style>
+<style id="keyword-tabs-product-tabs-type-match">
+  #keyword .keyword-tabs button:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) {
+    color:#596873!important;
+    font-family:'Gowun Batang','Noto Serif KR',serif!important;
+    font-size:14px!important;
+    font-style:normal!important;
+    font-weight:400!important;
+    line-height:1.4!important;
+  }
+  #keyword .keyword-tabs button.active:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+  #keyword .keyword-tabs button[aria-selected="true"]:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) {
+    color:#233a4a!important;
+    border-color:#A7B7C9!important;
+    background:rgba(167,183,201,.16)!important;
+  }
+  @media(max-width:760px) {
+    #keyword .keyword-tabs button:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) { font-size:13px!important; }
+  }
+</style>
 </head>
 
 <body>
@@ -3652,10 +3742,10 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
 <aside class="side-menu" id="sideMenu" aria-label="전체 메뉴" aria-hidden="true">
   <div class="side-menu-head"><span>GOT, MENU</span><button type="button" class="side-menu-close" aria-label="메뉴 닫기" data-side-menu-close></button></div>
   <nav class="side-menu-links" aria-label="전체 페이지 메뉴">
-    <div class="side-menu-item"><a class="side-menu-primary" href="keyword.html">GOT,</a><a class="side-menu-sub" href="keyword.html">지금, 이런 곳 <span>→</span></a></div>
-    <div class="side-menu-item"><a class="side-menu-primary" href="index.html#stay">STAY</a><a class="side-menu-sub" href="index.html#stay">지금, 머물기 좋은 곳 <span>→</span></a></div>
-    <div class="side-menu-item"><a class="side-menu-primary" href="index.html#promotion">PROMOTION</a><a class="side-menu-sub" href="index.html#promotion">프로모션 · 이벤트 <span>→</span></a></div>
-    <div class="side-menu-item"><a class="side-menu-primary" href="product.html">PRODUCT</a><a class="side-menu-sub" href="product.html">지금, 시간을 담은 것 <span>→</span></a></div>
+    <div class="side-menu-item"><a class="side-menu-primary" href="keyword.html">GOT,</a></div>
+    <div class="side-menu-item"><a class="side-menu-primary" href="index.html#stay">STAY</a></div>
+    <div class="side-menu-item"><a class="side-menu-primary" href="index.html#promotion">PROMOTION</a></div>
+    <div class="side-menu-item"><a class="side-menu-primary" href="product.html">PRODUCT</a></div>
   </nav>
   <p class="side-menu-note">CURATED STAYS<br>FOR A BETTER<br>MOMENTS</p>
 </aside>
@@ -3675,8 +3765,8 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                     aria-label="2번 배너"></button><button aria-label="3번 배너"></button></div>
         </section>
         <section class="section" id="keyword">
-            <div class="eyebrow">GOT, Keyword</div>
-            <h2>지금, 이런 곳</h2>
+            
+            <h2>GOT, Keyword</h2>
             <p class="intro keyword-intro" style="font-weight:400">·　곳이 제안하는 다섯 가지 키워드로 당신의 다음 순간을 찾아보세요.</p>
             <div class="keyword-tabs" role="tablist"><button class="active" role="tab" aria-selected="true"
                     data-tab="0">천천히</button><button role="tab" aria-selected="false" data-tab="1">너머</button><button
@@ -3687,19 +3777,19 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                     <div class="region">천천히</div>
                     <h3>조금 느려도 괜찮은 하루</h3>
                     <p>빠르게 흐르는 일상에서 잠시 벗어나,<br>오래 머물수록 좋은 공간을 소개합니다.</p>
-                    <div class="details">◎　경기도 동두천시<br>⌂　1박 620,000원 ~</div><a href="keyword.html"><span>RESERVATION</span><span class="keyword-booking-arrow" aria-hidden="true">→</span></a>
+                    <div class="details"><span><svg class="keyword-location-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>　경기도 동두천시</span><br><span class="keyword-price-line">⌂　1박 620,000원 ~</span></div><a href="keyword.html"><span>RESERVATION</span><span class="keyword-booking-arrow" aria-hidden="true">→</span></a>
                 </div><img class="tab-image" src="assets/keyword-1.png" alt="화이트 스테이와 야외 수영장">
             </article>
         </section>
         <section class="section" id="stay">
             <div class="section-heading">
                 <div>
-                    <div class="eyebrow">GOT, Space</div>
-                    <h2>지금, 머물기 좋은 곳</h2>
+                    
+                    <h2>GOT, Stay</h2>
                     <p class="intro">·　곳이 엄선한 특별한 공간들을 만나보세요.</p>
                 </div>
-                <div class="slider-controls"><span class="stay-progress" aria-live="polite"><span id="stayCurrent">01</span><span class="stay-progress-divider">/</span><span id="stayTotal">06</span></span><button id="stayPrev" aria-label="이전 숙소">←</button><button id="stayNext"
-                        aria-label="다음 숙소">→</button></div>
+                <div class="slider-controls"><span class="stay-progress" aria-live="polite"><span id="stayCurrent">01</span><span class="stay-progress-divider">/</span><span id="stayTotal">06</span></span><button id="stayPrev" aria-label="이전 숙소"><span class="slider-chevron" aria-hidden="true">‹</span></button><button id="stayNext"
+                        aria-label="다음 숙소"><span class="slider-chevron" aria-hidden="true">›</span></button></div>
             </div>
             <div class="stay-window">
                 <div class="stay-track">
@@ -3785,26 +3875,29 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
             <div class="promo-label">PROMOTION · EVENT</div>
             <div class="promo-copy"><strong>10.12 — 11.30<br>UP TO<br><span class="promo-number">20</span>% OFF</strong><a href="#stay"
                     style="display:inline-block;margin-top:22px;font-size:11px">자세히 보기　→</a></div><button
-                class="promo-arrow prev" id="promoPrev" aria-label="이전 이벤트">‹</button><button class="promo-arrow next"
-                id="promoNext" aria-label="다음 이벤트">›</button>
+                class="promo-arrow prev" id="promoPrev" aria-label="이전 이벤트"><span class="slider-chevron" aria-hidden="true">‹</span></button><button class="promo-arrow next"
+                id="promoNext" aria-label="다음 이벤트"><span class="slider-chevron" aria-hidden="true">›</span></button>
             <div class="promo-counter" id="promoCounter">01　/　05</div>
         </section>
         <section class="product-scroll" id="product">
             <div class="product-sticky">
                 <div class="product-intro">
-                    <div class="eyebrow">GOT, Product</div>
-                    <h2>지금, 시간을 담은 것</h2>
+                    
+                    <h2>GOT, Product</h2>
                     <p class="intro">·　머무는 순간의 감각을 일상으로 가져가세요.</p>
                 </div>
-                <nav class="product-cats" aria-label="상품 카테고리">
-                    <div class="product-progress" aria-hidden="true"><span class="product-progress-thumb"></span></div>
-                    <button class="active" data-product="0"><span>01</span>전체</button><button
-                        data-product="1"><span>02</span>향</button><button
-                        data-product="2"><span>03</span>문구</button><button
-                        data-product="3"><span>04</span>패브릭</button><button
-                        data-product="4"><span>05</span>생활용품</button><button data-product="5"><span>06</span>소품</button>
-                </nav>
-                <div class="product-window">
+                <div class="product-category-row">
+                    <nav class="product-cats" aria-label="상품 카테고리">
+                        <div class="product-progress" aria-hidden="true"><span class="product-progress-thumb"></span></div>
+                        <button class="active" data-product="0"><span>01</span>전체</button><button
+                            data-product="1"><span>02</span>향</button><button
+                            data-product="2"><span>03</span>문구</button><button
+                            data-product="3"><span>04</span>패브릭</button><button
+                            data-product="4"><span>05</span>생활용품</button><button data-product="5"><span>06</span>소품</button>
+                    </nav>
+                    <a class="product-browse-link" href="product.html">전체 상품 보기 <span>→</span></a>
+                </div>
+                <div class="product-window" id="productWindow" role="region" aria-label="상품 둘러보기" tabindex="0">
                     <div class="product-track">
                         <article class="product-card" data-category="향"><img
                                 src="assets/goods-candle-feature.png" alt="햇살 아래 캔들">
@@ -3817,7 +3910,7 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 16,000</p>
+                            <p>₩ 16,000원</p>
                         </article>
                         <article class="product-card" data-category="문구"><img src="assets/goods-diary.png"
                                 alt="고요 브랜드 다이어리">
@@ -3830,7 +3923,7 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 10,000</p>
+                            <p>₩ 10,000원</p>
                         </article>
                         <article class="product-card" data-category="생활용품"><img
                                 src="assets/goods-cup-coaster.png" alt="고요 머그컵">
@@ -3843,7 +3936,7 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 20,000</p>
+                            <p>₩ 20,000원</p>
                         </article>
                         <article class="product-card" data-category="패브릭"><img
                                 src="assets/goods-ecobag.png" alt="고요 토트백">
@@ -3856,7 +3949,7 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 18,000</p>
+                            <p>₩ 18,000원</p>
                         </article>
                         <article class="product-card" data-category="소품"><img
                                 src="assets/goods-postcard-new.png" alt="제주 엽서 세트">
@@ -3869,7 +3962,7 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 6,000</p>
+                            <p>₩ 6,000원</p>
                         </article>
                         <article class="product-card" data-category="소품"><img
                                 src="assets/goods-keyring.png" alt="GOT 키링">
@@ -3882,19 +3975,24 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
                                         <circle cx="19" cy="20" r="1.2" />
                                     </svg></button>
                             </div>
-                            <p>₩ 8,000</p>
+                            <p>₩ 8,000원</p>
                         </article>
+                    </div>
+                </div>
+                <div class="product-carousel-footer">
+                    <div class="product-carousel-controls" aria-label="상품 카드 이동">
+                        <button type="button" id="productPrev" aria-label="이전 상품" disabled><span class="slider-chevron" aria-hidden="true">‹</span></button>
+                        <span id="productCount" aria-live="polite">01 / 04</span>
+                        <button type="button" id="productNext" aria-label="다음 상품"><span class="slider-chevron" aria-hidden="true">›</span></button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section moments" id="moments">
-            <div class="eyebrow">GOT, Moments</div>
-            <h2>지금, 시선이 닿은 곳</h2>
-            <p class="intro">·　곳의 시선으로 바라본 장면들을 살펴보세요.</p>
-            <div class="social"><span>@got.stay</span><a href="https://www.instagram.com/got.stay/" target="_blank"
-                    rel="noopener noreferrer" aria-label="Instagram에서 @got.stay 보기"><span>Instagram↗</span></a></div>
-            <div class="moment-grid"><img src="assets/moment-01.jpeg" alt="한옥 스테이의 입구"><img
+            <div class="moments-heading">
+                <span class="moments-watermark" aria-hidden="true">GOT, Moment</span>
+            </div>
+            <div class="moment-grid" role="region" aria-label="곳의 순간 사진 갤러리" tabindex="0"><img src="assets/moment-01.jpeg" alt="한옥 스테이의 입구"><img
                     src="assets/sns-5.png" alt="스테이의 건축"><img src="assets/moment-03.jpg"
                     alt="나무와 채광이 어우러진 고요한 실내"><img src="assets/moment-04.jpg" alt="자연 속 프라이빗 풀과 스테이"><img
                     src="assets/gotstay-05.jpeg" alt="숲을 바라보는 침실"></div>
@@ -3919,11 +4017,41 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
         <div class="copyright">Copyright © 2026 GOT, All Rights Reserved.</div>
     </footer>
     <script>
-        document.querySelectorAll('.moment-grid img').forEach(image => { const tile = document.createElement('div'), overlay = document.createElement('span'); tile.className = 'moment-tile'; overlay.className = 'moment-overlay'; overlay.textContent = '@got.stay'; tile.tabIndex = 0; image.parentNode.insertBefore(tile, image); tile.appendChild(image); tile.appendChild(overlay); tile.addEventListener("click", () => tile.classList.add("overlay-dismissed")); tile.addEventListener("pointerleave", () => tile.classList.remove("overlay-dismissed")) }); const cartCountEl = document.querySelector(".cart-count"), headerBag = document.querySelector(".header-bag"), cartToast = document.querySelector(".cart-toast"); let cartCount = 0, toastTimer; document.querySelectorAll(".product-card .cart-icon").forEach(button => button.addEventListener("click", () => { const name = button.closest(".product-card").querySelector("h3").textContent, added = button.getAttribute("aria-pressed") !== "true"; button.setAttribute("aria-pressed", String(added)); button.setAttribute("aria-label", added ? "장바구니에서 상품 삭제하기" : "상품 장바구니에 담기"); button.classList.remove("added"); if (added) { cartCount++; button.classList.add("added") } else { cartCount = Math.max(0, cartCount - 1) } cartCountEl.textContent = cartCount; cartCountEl.classList.toggle("visible", cartCount > 0); headerBag.classList.remove("bump"); void headerBag.offsetWidth; headerBag.classList.add("bump"); cartToast.textContent = added ? `${name} 상품을 장바구니에 담았습니다.` : `${name} 상품을 장바구니에서 삭제했습니다.`; cartToast.classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => cartToast.classList.remove("show"), 1800) })); const slides = [...document.querySelectorAll('.hero-slide')], dots = [...document.querySelectorAll('.hero-dots button')]; let heroIndex = 0; function showHero(i) { heroIndex = (i + slides.length) % slides.length; slides.forEach((s, n) => s.classList.toggle('active', n === heroIndex)); dots.forEach((d, n) => d.classList.toggle('active', n === heroIndex)) } dots.forEach((d, i) => d.addEventListener('click', () => { showHero(i); restartHero() })); let heroTimer = setInterval(() => showHero(heroIndex + 1), 5000); function restartHero() { clearInterval(heroTimer); heroTimer = setInterval(() => showHero(heroIndex + 1), 5000) }
-        const keywordData = [['천천히', '조금 느려도 괜찮은 하루', '빠르게 흐르는 일상에서 잠시 벗어나,\n오래 머물수록 좋은 공간을 소개합니다.', '경기도 동두천시', '1박 620,000원 ~', 'keyword-1.png'], ['너머', '익숙한 풍경 너머의 쉼', '낯선 길 끝에서 새로운 풍경을 만나고,\n온전한 나만의 시간을 발견해 보세요.', '경상북도 포항시', '1박 350,000원 ~', 'keyword-2.png'], ['여백', '비워 둔 자리의 여백', '아무것도 하지 않아도 괜찮은 곳에서\n넉넉한 여백과 함께 마음을 쉬어가세요.', '강원도 홍천군', '1박 1,000,000원 ~', 'keyword-3.png'], ['사이', '자연과 공간 사이', '나무와 빛, 건축이 조용히 이어지는 곳에서\n특별한 하루를 경험합니다.', '경상북도 경주시', '1박 350,000원 ~', 'keyword-4.png'], ['발견', '작은 발견이 있는 여행', '천천히 걷다 보면 만나는 소소한 기쁨으로\n오늘의 여행에 새로운 장면을 더해보세요.', '제주도 제주시', '1박 650,000원 ~', 'keyword-5.png']]; const tabButtons = [...document.querySelectorAll('.keyword-tabs button')], keywordPanel = document.querySelector('.tab-panel'); let keywordIndex = 0, keywordTimer; function showKeyword(i) { keywordIndex = (i + keywordData.length) % keywordData.length; tabButtons.forEach((button, n) => { button.classList.toggle('active', n === keywordIndex); button.setAttribute('aria-selected', String(n === keywordIndex)) }); const d = keywordData[keywordIndex]; keywordPanel.querySelector('.region').textContent = d[0]; keywordPanel.querySelector('h3').textContent = d[1]; keywordPanel.querySelector('.tab-copy p').textContent = d[2]; keywordPanel.querySelector('.details').innerHTML = '◎　' + d[3] + '<br>⌂　' + d[4]; keywordPanel.querySelector('.tab-image').src = 'assets/' + encodeURIComponent(d[5]).replaceAll('%2F', '/'); keywordPanel.querySelector('.tab-copy>a').href = 'keyword.html?keyword=' + encodeURIComponent(d[0]) } function resetKeywordTimer() { clearInterval(keywordTimer); keywordTimer = setInterval(() => showKeyword(keywordIndex + 1), 5000) } tabButtons.forEach((button, i) => button.addEventListener('click', () => { showKeyword(i); resetKeywordTimer() })); resetKeywordTimer();
+        document.querySelectorAll('.moment-grid img').forEach(image => { const tile = document.createElement('div'), overlay = document.createElement('span'); tile.className = 'moment-tile'; overlay.className = 'moment-overlay'; overlay.textContent = '@got.stay'; tile.tabIndex = 0; image.parentNode.insertBefore(tile, image); tile.appendChild(image); tile.appendChild(overlay); tile.addEventListener("click", () => tile.classList.add("overlay-dismissed")); tile.addEventListener("pointerleave", () => tile.classList.remove("overlay-dismissed")) }); const cartCountEl = document.querySelector(".cart-count"), headerBag = document.querySelector(".header-bag"), cartToast = document.querySelector(".cart-toast"); let cartCount = 0, toastTimer; document.querySelectorAll(".product-card .cart-icon").forEach(button => button.addEventListener("click", () => { const name = button.closest(".product-card").querySelector("h3").textContent, added = button.getAttribute("aria-pressed") !== "true"; button.setAttribute("aria-pressed", String(added)); button.setAttribute("aria-label", added ? "장바구니에서 상품 삭제하기" : "상품 장바구니에 담기"); button.classList.remove("added"); if (added) { cartCount++; button.classList.add("added") } else { cartCount = Math.max(0, cartCount - 1) } cartCountEl.textContent = cartCount; cartCountEl.classList.toggle("visible", cartCount > 0); headerBag.classList.remove("bump"); void headerBag.offsetWidth; headerBag.classList.add("bump"); cartToast.textContent = added ? `${name} 상품을 장바구니에 담았습니다.` : `${name} 상품을 장바구니에서 삭제했습니다.`; cartToast.classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => cartToast.classList.remove("show"), 1800) })); const slides = [...document.querySelectorAll('.hero-slide')], dots = [...document.querySelectorAll('.hero-dots button')]; let heroIndex = 0; function showHero(i) { heroIndex = (i + slides.length) % slides.length; slides.forEach((s, n) => s.classList.toggle('active', n === heroIndex)); dots.forEach((d, n) => d.classList.toggle('active', n === heroIndex)) } dots.forEach((d, i) => d.addEventListener('click', () => { showHero(i); restartHero() })); const heroRegion = document.querySelector(".hero"); let heroTimer; function restartHero() { clearInterval(heroTimer); if (!document.hidden && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && !heroRegion.matches(":hover") && !heroRegion.contains(document.activeElement)) heroTimer = setInterval(() => showHero(heroIndex + 1), 6000) } heroRegion.addEventListener("pointerenter", () => clearInterval(heroTimer)); heroRegion.addEventListener("pointerleave", restartHero); heroRegion.addEventListener("focusin", () => clearInterval(heroTimer)); heroRegion.addEventListener("focusout", restartHero); document.addEventListener("visibilitychange", restartHero); restartHero()
+        const keywordData = [['천천히', '조금 느려도 괜찮은 하루', '빠르게 흐르는 일상에서 잠시 벗어나,\n오래 머물수록 좋은 공간을 소개합니다.', '경기도 동두천시', '1박 620,000원 ~', 'keyword-1.png'], ['너머', '익숙한 풍경 너머의 쉼', '낯선 길 끝에서 새로운 풍경을 만나고,\n온전한 나만의 시간을 발견해 보세요.', '경상북도 포항시', '1박 350,000원 ~', 'keyword-2.png'], ['여백', '비워 둔 자리의 여백', '아무것도 하지 않아도 괜찮은 곳에서\n넉넉한 여백과 함께 마음을 쉬어가세요.', '강원도 홍천군', '1박 1,000,000원 ~', 'keyword-3.png'], ['사이', '자연과 공간 사이', '나무와 빛, 건축이 조용히 이어지는 곳에서\n특별한 하루를 경험합니다.', '경상북도 경주시', '1박 350,000원 ~', 'keyword-4.png'], ['발견', '작은 발견이 있는 여행', '천천히 걷다 보면 만나는 소소한 기쁨으로\n오늘의 여행에 새로운 장면을 더해보세요.', '제주도 제주시', '1박 650,000원 ~', 'keyword-5.png']]; const tabButtons = [...document.querySelectorAll('.keyword-tabs button')], keywordPanel = document.querySelector('.tab-panel'); let keywordIndex = 0, keywordTimer; function showKeyword(i) { keywordIndex = (i + keywordData.length) % keywordData.length; tabButtons.forEach((button, n) => { button.classList.toggle('active', n === keywordIndex); button.setAttribute('aria-selected', String(n === keywordIndex)) }); const d = keywordData[keywordIndex]; keywordPanel.querySelector('.region').textContent = d[0]; keywordPanel.querySelector('h3').textContent = d[1]; keywordPanel.querySelector('.tab-copy p').textContent = d[2]; keywordPanel.querySelector('.details').innerHTML = '<span><svg class="keyword-location-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>　' + d[3] + '</span><br><span class="keyword-price-line">⌂　' + d[4] + '</span>'; keywordPanel.querySelector('.tab-image').src = 'assets/' + encodeURIComponent(d[5]).replaceAll('%2F', '/'); keywordPanel.querySelector('.tab-copy>a').href = 'keyword.html?keyword=' + encodeURIComponent(d[0]) } const keywordRegion = document.querySelector("#keyword"); function resetKeywordTimer() { clearInterval(keywordTimer); if (!document.hidden && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && !keywordRegion.matches(":hover") && !keywordRegion.contains(document.activeElement)) keywordTimer = setInterval(() => showKeyword(keywordIndex + 1), 6000) } keywordRegion.addEventListener("pointerenter", () => clearInterval(keywordTimer)); keywordRegion.addEventListener("pointerleave", resetKeywordTimer); keywordRegion.addEventListener("focusin", () => clearInterval(keywordTimer)); keywordRegion.addEventListener("focusout", resetKeywordTimer); document.addEventListener("visibilitychange", resetKeywordTimer); tabButtons.forEach((button, i) => button.addEventListener('click', () => { showKeyword(i); resetKeywordTimer() })); resetKeywordTimer();
         const stayTrack = document.querySelector('.stay-track'), stayCards = [...document.querySelectorAll('.stay-card')], stayWindow = document.querySelector('.stay-window'), stayPrev = document.querySelector('#stayPrev'), stayNext = document.querySelector('#stayNext'); let stayPage = 0; function stayMetrics() { const gap = parseFloat(getComputedStyle(stayTrack).gap) || 0, widths = stayCards.map(card => card.getBoundingClientRect().width), starts = []; let cursor = 0; widths.forEach(width => { starts.push(cursor); cursor += width + gap }); const maxOffset = Math.max(0, cursor - gap - stayWindow.clientWidth), pageSize = 1, snaps = [0]; for (let i = pageSize; i < starts.length; i += pageSize) { if (starts[i] < maxOffset - 1) snaps.push(starts[i]) } if (maxOffset > 0 && Math.abs(snaps[snaps.length - 1] - maxOffset) > 1) snaps.push(maxOffset); return snaps } function renderStay(page) { const snaps = stayMetrics(); stayPage = Math.max(0, Math.min(snaps.length - 1, page)); stayTrack.style.transform = 'translate3d(' + (-snaps[stayPage]) + 'px,0,0)'; stayPrev.disabled = stayPage === 0; stayNext.disabled = stayPage === snaps.length - 1; const currentLabel = document.querySelector('#stayCurrent'), totalLabel = document.querySelector('#stayTotal'); if (currentLabel) currentLabel.textContent = String(stayPage + 1).padStart(2, '0'); if (totalLabel) totalLabel.textContent = String(stayCards.length).padStart(2, '0'); } stayPrev.addEventListener('click', () => renderStay(stayPage - 1)); stayNext.addEventListener('click', () => renderStay(stayPage + 1)); window.addEventListener('resize', () => renderStay(stayPage)); renderStay(0);
-        const productSection = document.querySelector('.product-scroll'), productTrack = document.querySelector('.product-track'), productCards = [...document.querySelectorAll('.product-card')], productButtons = [...document.querySelectorAll('.product-cats button')]; let productMode = '전체'; function updateProductScroll() { const r = productSection.getBoundingClientRect(), available = productSection.offsetHeight - innerHeight, progress = Math.max(0, Math.min(1, -r.top / available)); const max = Math.max(0, productTrack.scrollWidth - productTrack.parentElement.clientWidth); productTrack.style.transform = `translateX(${-max * progress}px)`; const thumb = document.querySelector(".product-progress-thumb"); if (thumb) { const rail = thumb.parentElement; thumb.style.transform = `translateY(${Math.max(0, (rail.clientHeight - thumb.offsetHeight) * progress)}px)` } const activeCategory = Math.round(progress * (productButtons.length - 1)); productButtons.forEach((button, i) => button.classList.toggle("active", i === activeCategory)) } window.addEventListener('scroll', updateProductScroll, { passive: true }); window.addEventListener('resize', updateProductScroll); document.querySelectorAll('.stay-favorite').forEach(button => button.addEventListener('click', () => { const selected = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(selected)); button.setAttribute('aria-label', button.getAttribute('aria-label').replace(selected ? ' 찜하기' : ' 찜 해제', selected ? ' 찜 해제' : ' 찜하기')) })); productButtons.forEach(b => b.addEventListener('click', () => { productButtons.forEach(x => x.classList.toggle('active', x === b)); productMode = ['전체', '향', '문구', '패브릭', '생활용품', '소품'][Number(b.dataset.product)]; productCards.forEach(c => c.style.display = productMode === '전체' || c.dataset.category === productMode ? '' : 'none'); updateProductScroll() }));
-        const promo = document.querySelector('.promo'), promoCopy = promo.querySelector('.promo-copy'), promoCounter = document.querySelector('#promoCounter'); const promoLayerA = document.createElement('div'), promoLayerB = document.createElement('div'); promoLayerA.className = promoLayerB.className = 'promo-slide-layer'; promoLayerA.style.backgroundImage = promo.style.backgroundImage; promoLayerA.style.backgroundPosition = 'center'; promo.insertBefore(promoLayerB, promo.firstChild); promo.insertBefore(promoLayerA, promo.firstChild); promo.style.backgroundImage = 'none'; let promoCurrentLayer = promoLayerA, promoNextLayer = promoLayerB, promoBusy = false; function slidePromoImage(image, position, direction) { const outgoing = promoCurrentLayer, incoming = promoNextLayer; incoming.style.transition = 'none'; incoming.style.backgroundImage = 'url("assets/' + encodeURIComponent(image) + '")'; incoming.style.backgroundPosition = position; incoming.style.backgroundSize = image === 'promotion-5.jpeg' ? '105% auto' : 'cover'; incoming.style.transform = 'translate3d(' + direction * 100 + '%,0,0)'; void incoming.offsetWidth; incoming.style.transition = 'transform .7s cubic-bezier(.22,.61,.36,1)'; outgoing.style.transition = 'transform .7s cubic-bezier(.22,.61,.36,1)'; requestAnimationFrame(() => { incoming.style.transform = 'translate3d(0,0,0)'; outgoing.style.transform = 'translate3d(' + (-direction * 100) + '%,0,0)' }); promoCurrentLayer = incoming; promoNextLayer = outgoing; window.setTimeout(() => { outgoing.style.transition = 'none'; outgoing.style.transform = 'translate3d(' + direction * 100 + '%,0,0)' }, 760) } const promoSlides = [{ image: 'promotion-1.png', date: '10.12 — 11.30', headline: 'UP TO', discount: '<span class="promo-number">20</span>% OFF' }, { image: 'promotion-2.jpeg', date: '', headline: 'NEW STAYS', discount: 'THIS MONTH' }, { image: 'promotion-3.jpeg', date: '', headline: 'SENSORY INTERIORS', discount: 'DESIGN-INSPIRATION STAY' }, { image: 'promotion-4.jpeg', date: '', headline: 'TRADITIONAL HANOK', discount: 'AN EXCLUSIVE STAY' }, { image: 'promotion-5.jpeg', date: '', headline: 'PRIVATE RESORT', discount: 'A QUIET STAY' }]; let promoIndex = 0; function showPromo(n) { if (promoBusy) return; promoBusy = true; const direction = n >= promoIndex ? 1 : -1; promoIndex = (n + promoSlides.length) % promoSlides.length; const s = promoSlides[promoIndex]; promoCopy.classList.add('changing'); window.setTimeout(() => { slidePromoImage(s.image, promoIndex === 1 ? 'center calc(50% - 100px)' : promoIndex === 2 ? 'center calc(50% - 80px)' : promoIndex === 3 ? 'center calc(50% + 15px)' : promoIndex === 4 ? 'center calc(50% - 80px)' : 'center', direction); promoCopy.querySelector('strong').innerHTML = promoIndex === 0 ? s.date + '<br>' + s.headline + '<br>' + s.discount : s.headline + '<br>' + s.discount; promoCounter.textContent = '0' + (promoIndex + 1) + '　/　0' + promoSlides.length; promoCopy.classList.remove('changing') }, 140); window.setTimeout(() => { promoBusy = false }, 820) } let promoTimer = setInterval(() => showPromo(promoIndex + 1), 3000); document.querySelector('#promoPrev').addEventListener('click', () => { clearInterval(promoTimer); showPromo(promoIndex - 1) }); document.querySelector('#promoNext').addEventListener('click', () => { clearInterval(promoTimer); showPromo(promoIndex + 1) });</script>
+        const productWindow = document.querySelector('#productWindow');
+        const productTrack = document.querySelector('#product .product-track');
+        const productCards = [...document.querySelectorAll('#product .product-card')];
+        const productButtons = [...document.querySelectorAll('#product .product-cats button')];
+        const productPrev = document.querySelector('#productPrev');
+        const productNext = document.querySelector('#productNext');
+        const productCount = document.querySelector('#productCount');
+        const productCategories = ['전체', '향', '문구', '패브릭', '생활용품', '소품'];
+        const productGap = () => parseFloat(getComputedStyle(productTrack).columnGap) || 0;
+        const productStep = () => { const card = productCards.find(item => !item.hidden); return card ? card.getBoundingClientRect().width + productGap() : 0; };
+        function updateProductControls() {
+          const max = Math.max(0, productWindow.scrollWidth - productWindow.clientWidth), step = productStep();
+          const page = step ? Math.round(productWindow.scrollLeft / step) : 0, pages = step ? Math.ceil(max / step) + 1 : 1;
+          productPrev.disabled = productWindow.scrollLeft <= 2; productNext.disabled = productWindow.scrollLeft >= max - 2;
+          productCount.textContent = `${String(Math.min(page + 1, pages)).padStart(2, '0')} / ${String(pages).padStart(2, '0')}`;
+        }
+        productPrev.addEventListener('click', () => productWindow.scrollBy({ left: -productStep(), behavior: 'smooth' }));
+        productNext.addEventListener('click', () => productWindow.scrollBy({ left: productStep(), behavior: 'smooth' }));
+        productWindow.addEventListener('scroll', updateProductControls, { passive: true }); window.addEventListener('resize', updateProductControls);
+        productWindow.addEventListener('keydown', event => { if (event.key === 'ArrowRight') { event.preventDefault(); productNext.click(); } if (event.key === 'ArrowLeft') { event.preventDefault(); productPrev.click(); } });
+        productButtons.forEach(button => button.addEventListener('click', () => {
+          const category = productCategories[Number(button.dataset.product)] || '전체';
+          productButtons.forEach(item => item.classList.toggle('active', item === button));
+          productCards.forEach(card => { card.hidden = category !== '전체' && card.dataset.category !== category; });
+          productWindow.scrollTo({ left: 0, behavior: 'smooth' }); requestAnimationFrame(updateProductControls);
+        }));
+        document.querySelectorAll('.stay-favorite').forEach(button => button.addEventListener('click', () => {
+          const selected = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(selected));
+          button.setAttribute('aria-label', button.getAttribute('aria-label').replace(selected ? ' 찜하기' : ' 찜 해제', selected ? ' 찜 해제' : ' 찜하기'));
+        }));
+        requestAnimationFrame(updateProductControls);
+        const promo = document.querySelector('.promo'), promoCopy = promo.querySelector('.promo-copy'), promoCounter = document.querySelector('#promoCounter'); const promoLayerA = document.createElement('div'), promoLayerB = document.createElement('div'); promoLayerA.className = promoLayerB.className = 'promo-slide-layer'; promoLayerA.style.backgroundImage = promo.style.backgroundImage; promoLayerA.style.backgroundPosition = 'center'; promo.insertBefore(promoLayerB, promo.firstChild); promo.insertBefore(promoLayerA, promo.firstChild); promo.style.backgroundImage = 'none'; let promoCurrentLayer = promoLayerA, promoNextLayer = promoLayerB, promoBusy = false; function slidePromoImage(image, position, direction) { const outgoing = promoCurrentLayer, incoming = promoNextLayer; incoming.style.transition = 'none'; incoming.style.backgroundImage = 'url("assets/' + encodeURIComponent(image) + '")'; incoming.style.backgroundPosition = position; incoming.style.backgroundSize = image === 'promotion-5.jpeg' ? '105% auto' : 'cover'; incoming.style.transform = 'translate3d(' + direction * 100 + '%,0,0)'; void incoming.offsetWidth; incoming.style.transition = 'transform .7s cubic-bezier(.22,.61,.36,1)'; outgoing.style.transition = 'transform .7s cubic-bezier(.22,.61,.36,1)'; requestAnimationFrame(() => { incoming.style.transform = 'translate3d(0,0,0)'; outgoing.style.transform = 'translate3d(' + (-direction * 100) + '%,0,0)' }); promoCurrentLayer = incoming; promoNextLayer = outgoing; window.setTimeout(() => { outgoing.style.transition = 'none'; outgoing.style.transform = 'translate3d(' + direction * 100 + '%,0,0)' }, 760) } const promoSlides = [{ image: 'promotion-1.png', date: '10.12 — 11.30', headline: 'UP TO', discount: '<span class="promo-number">20</span>% OFF' }, { image: 'promotion-2.jpeg', date: '', headline: 'NEW STAYS', discount: 'THIS MONTH' }, { image: 'promotion-3.jpeg', date: '', headline: 'SENSORY INTERIORS', discount: 'DESIGN-INSPIRATION STAY' }, { image: 'promotion-4.jpeg', date: '', headline: 'TRADITIONAL HANOK', discount: 'AN EXCLUSIVE STAY' }, { image: 'promotion-5.jpeg', date: '', headline: 'PRIVATE RESORT', discount: 'A QUIET STAY' }]; let promoIndex = 0; function showPromo(n) { if (promoBusy) return; promoBusy = true; const direction = n >= promoIndex ? 1 : -1; promoIndex = (n + promoSlides.length) % promoSlides.length; const s = promoSlides[promoIndex]; promoCopy.classList.add('changing'); window.setTimeout(() => { slidePromoImage(s.image, promoIndex === 1 ? 'center calc(50% - 100px)' : promoIndex === 2 ? 'center calc(50% - 80px)' : promoIndex === 3 ? 'center calc(50% + 15px)' : promoIndex === 4 ? 'center calc(50% - 80px)' : 'center', direction); promoCopy.querySelector('strong').innerHTML = promoIndex === 0 ? s.date + '<br>' + s.headline + '<br>' + s.discount : s.headline + '<br>' + s.discount; promoCounter.textContent = '0' + (promoIndex + 1) + '　/　0' + promoSlides.length; promoCopy.classList.remove('changing') }, 140); window.setTimeout(() => { promoBusy = false }, 820) } let promoTimer; const promoRegion = document.querySelector("#promotion"); function restartPromoTimer() { clearInterval(promoTimer); if (!document.hidden && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && !promoRegion.matches(":hover") && !promoRegion.contains(document.activeElement)) promoTimer = setInterval(() => showPromo(promoIndex + 1), 6000) } promoRegion.addEventListener("pointerenter", () => clearInterval(promoTimer)); promoRegion.addEventListener("pointerleave", restartPromoTimer); promoRegion.addEventListener("focusin", () => clearInterval(promoTimer)); promoRegion.addEventListener("focusout", restartPromoTimer); document.addEventListener("visibilitychange", restartPromoTimer); document.querySelector('#promoPrev').addEventListener('click', () => { showPromo(promoIndex - 1); restartPromoTimer() }); document.querySelector('#promoNext').addEventListener('click', () => { showPromo(promoIndex + 1); restartPromoTimer() }); restartPromoTimer();</script>
     <script>document.querySelectorAll('.stay-card>img').forEach(image => { const card = image.parentElement, favorite = card.querySelector('.meta .stay-favorite'), frame = document.createElement('div'); frame.className = 'stay-image'; image.before(frame); frame.append(image); if (favorite) frame.append(favorite) }); document.querySelectorAll('.product-card>img').forEach(image => { const frame = document.createElement('div'); frame.className = 'product-image'; image.before(frame); frame.append(image) });</script>
     <div class="custom-cursor" aria-hidden="true"></div>
     <script>(() => { const cursor = document.querySelector('.custom-cursor'); if (!cursor || !window.matchMedia('(hover:hover) and (pointer:fine)').matches) return; const interactive = 'a,button,[role="button"],.tab-image,.stay-image img,.product-card img,.moment-tile'; window.addEventListener('pointermove', event => { cursor.style.left = event.clientX + 'px'; cursor.style.top = event.clientY + 'px'; cursor.classList.add('is-visible'); cursor.classList.toggle('is-hover', !!event.target.closest(interactive)) }); window.addEventListener('pointerdown', () => cursor.classList.add('is-down')); window.addEventListener('pointerup', () => cursor.classList.remove('is-down')); window.addEventListener('pointerleave', () => cursor.classList.remove('is-visible')); window.addEventListener('pointerenter', () => cursor.classList.add('is-visible')) })();</script>
@@ -4275,7 +4403,439 @@ body :where(strong,b) { font-weight: 600 !important; -webkit-text-stroke: .12px 
     body #moments .social:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) a { font-size:13px!important; }
   }
 </style>
-</body>
+<style id="moments-editorial-gallery">
+  #moments { container-type:inline-size; }
+  #moments .moments-heading {
+    position:relative;
+    isolation:isolate;
+    min-height:132px;
+    margin:0 0 26px!important;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  #moments .moments-heading h2,
+  #moments .moments-heading .intro { position:relative; z-index:1; margin-left:auto!important; margin-right:auto!important; }
+  #moments .moments-heading h2 { margin-bottom:8px!important; }
+  #moments .moments-heading .intro { margin-top:0!important; }
+  #moments .moments-watermark {
+    position:absolute;
+    z-index:0;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-39%);
+    color:rgba(35,58,74,.105);
+    font-family:'Playfair Display',Georgia,serif;
+    font-size:clamp(76px,12vw,164px);
+    font-style:italic;
+    font-weight:400;
+    letter-spacing:.045em;
+    line-height:.8;
+    white-space:nowrap;
+    pointer-events:none;
+    user-select:none;
+  }
+  #moments .social { position:relative; z-index:1; margin:0 0 14px!important; }
+  #moments .moment-grid {
+    position:relative;
+    z-index:1;
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:clamp(12px,2.2vw,28px)!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:0!important;
+    scroll-snap-type:x mandatory;
+    scroll-padding-inline:1px;
+    scrollbar-width:none;
+    overscroll-behavior-inline:contain;
+  }
+  #moments .moment-grid::-webkit-scrollbar { display:none; }
+  #moments .moment-grid > .moment-tile {
+    display:block!important;
+    flex:0 0 calc((100% - 2 * clamp(12px,2.2vw,28px)) / 3)!important;
+    height:calc((100cqi - 2 * clamp(12px,2.2vw,28px)) / 3 / .82)!important;
+    aspect-ratio:auto!important;
+    scroll-snap-align:start;
+  }
+  #moments .moment-tile { position:relative!important; align-self:stretch!important; }
+  #moments .moment-tile {
+    position:relative!important;
+    box-sizing:border-box!important;
+    height:calc((100cqi - 2 * clamp(12px,2.2vw,28px)) / 3 / .82)!important;
+    min-height:0!important;
+    padding:0!important;
+    margin-top:0!important;
+    aspect-ratio:auto!important;
+    overflow:hidden!important;
+  }
+  #moments .moment-tile img {
+    position:absolute!important;
+    inset:0!important;
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    max-width:none!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:0!important;
+    object-fit:cover!important;
+    object-position:center!important;
+  }
+  @media(max-width:760px) {
+    #moments .moments-heading { min-height:108px; margin-bottom:20px!important; }
+    #moments .moments-watermark { font-size:clamp(60px,17vw,105px); }
+    #moments .moment-grid { gap:12px!important; }
+    #moments .moment-grid > .moment-tile { flex-basis:78vw!important; height:calc(78vw / .82)!important; }
+  }
+</style>
+<script id="moments-auto-carousel">
+(() => {
+  const rail = document.querySelector('#moments .moment-grid');
+  if (!rail || rail.dataset.autoCarouselReady) return;
+  rail.dataset.autoCarouselReady = 'true';
+  const originals = [...rail.children];
+  if (originals.length < 4) return;
+  let timer = 0, busy = false, moving = false;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const stepSize = () => {
+    const tile = rail.querySelector('.moment-tile');
+    if (!tile) return 0;
+    const gap = parseFloat(getComputedStyle(rail).columnGap) || 0;
+    return tile.getBoundingClientRect().width + gap;
+  };
+  const clear = () => { window.clearInterval(timer); timer = 0; };
+  const advance = () => {
+    if (moving || busy) return;
+    const step = stepSize(), max = Math.max(0, rail.scrollWidth - rail.clientWidth);
+    if (!step || max < 1) return;
+    moving = true;
+    const next = Math.min(rail.scrollLeft + step, max);
+    rail.scrollTo({ left: next, behavior: 'smooth' });
+    if (next >= max - 1) {
+      window.setTimeout(() => {
+        const rotateCount = Math.max(1, Math.min(originals.length - 1, Math.round(max / step)));
+        for (let i = 0; i < rotateCount; i++) rail.append(rail.firstElementChild);
+        rail.scrollLeft = 0;
+        moving = false;
+      }, 700);
+    } else {
+      window.setTimeout(() => { moving = false; }, 700);
+    }
+  };
+  const start = () => {
+    clear();
+    if (reducedMotion.matches || document.hidden || busy) return;
+    timer = window.setInterval(advance, 3000);
+  };
+  rail.addEventListener('pointerenter', () => { busy = true; clear(); });
+  rail.addEventListener('pointerleave', () => { busy = false; start(); });
+  rail.addEventListener('focusin', () => { busy = true; clear(); });
+  rail.addEventListener('focusout', event => {
+    if (!rail.contains(event.relatedTarget)) { busy = false; start(); }
+  });
+  rail.addEventListener('touchstart', () => { busy = true; clear(); }, { passive:true });
+  rail.addEventListener('touchend', () => { busy = false; start(); }, { passive:true });
+  rail.addEventListener('scrollend', () => { if (!moving && busy) start(); });
+  document.addEventListener('visibilitychange', start);
+  reducedMotion.addEventListener?.('change', start);
+  window.addEventListener('resize', () => { rail.scrollLeft = 0; });
+  start();
+})();
+</script>
+<style id="product-horizontal-rail-redesign">
+  #product.product-scroll { position:relative!important; height:auto!important; min-height:0!important; padding:clamp(58px,7vw,104px) var(--page-gutter,6.5vw)!important; overflow:visible!important; background:#f3efe8!important; }
+  #product .product-sticky { position:relative!important; inset:auto!important; top:auto!important; width:min(100%,1320px)!important; height:auto!important; min-height:0!important; max-height:none!important; margin:0 auto!important; padding:0!important; display:flex!important; flex-direction:column!important; align-items:stretch!important; gap:clamp(20px,2.5vw,34px)!important; overflow:visible!important; }
+  #product .product-intro { position:static!important; inset:auto!important; margin:0!important; }
+  #product .product-category-row { display:flex!important; align-items:center!important; gap:24px!important; min-width:0!important; width:100%!important; }
+  #product .product-cats { flex:1 1 auto!important; min-width:0!important; position:static!important; inset:auto!important; height:auto!important; width:auto!important; display:flex!important; flex-direction:row!important; align-items:center!important; justify-content:flex-start!important; gap:clamp(18px,3vw,38px)!important; overflow-x:auto!important; padding:0 0 12px!important; margin:0!important; border-bottom:1px solid rgba(35,58,74,.18)!important; scrollbar-width:none!important; }
+  #product .product-cats::-webkit-scrollbar { display:none!important; } #product .product-progress { display:none!important; }
+  #product .product-cats button { position:relative!important; display:inline-flex!important; flex:0 0 auto!important; align-items:center!important; gap:7px!important; width:auto!important; height:auto!important; padding:6px 0!important; border:0!important; background:transparent!important; color:#596873!important; font:400 14px/1.4 'Gowun Batang','Noto Serif KR',serif!important; white-space:nowrap!important; opacity:1!important; writing-mode:horizontal-tb!important; transition:color .25s ease!important; }
+  #product .product-cats button span { display:none!important; } #product .product-cats button.active { color:#233a4a!important; }
+  #product .product-cats button.active::after { position:absolute; content:''; height:1px; left:0; right:0; bottom:-13px; background:#233a4a; }
+  #product .product-window { --product-gap:clamp(12px,1.6vw,22px); position:relative!important; inset:auto!important; width:100%!important; height:auto!important; max-height:none!important; overflow-x:auto!important; overflow-y:hidden!important; padding:0!important; margin:0!important; scroll-snap-type:x mandatory!important; scroll-behavior:smooth!important; scrollbar-width:none!important; overscroll-behavior-x:contain; }
+  #product .product-window::-webkit-scrollbar { display:none!important; }
+  #product .product-track { position:static!important; display:grid!important; grid-auto-flow:column!important; grid-auto-columns:calc((100% - var(--product-gap) - var(--product-gap))/3)!important; gap:var(--product-gap)!important; width:100%!important; height:auto!important; transform:none!important; transition:none!important; will-change:auto!important; }
+  #product .product-card { display:block!important; position:relative!important; width:auto!important; min-width:0!important; max-width:none!important; height:auto!important; margin:0!important; padding:0!important; background:transparent!important; border:0!important; box-shadow:none!important; scroll-snap-align:start!important; opacity:1!important; transform:none!important; }
+  #product .product-card[hidden] { display:none!important; }
+  #product .product-image { display:block!important; width:100%!important; aspect-ratio:4/5!important; overflow:hidden!important; background:#e7e3db!important; }
+  #product .product-image img { display:block!important; width:100%!important; height:100%!important; object-fit:cover!important; }
+  #product .product-title-row { display:flex!important; align-items:center!important; justify-content:space-between!important; gap:10px!important; margin-top:14px!important; }
+  #product .product-title-row h3 { margin:0!important; font-size:clamp(16px,1.35vw,19px)!important; } #product .product-card>p { margin:8px 0 0!important; }
+  #product .product-carousel-footer { display:flex!important; align-items:center!important; justify-content:center!important; gap:18px!important; }
+  #product .product-carousel-controls { display:flex!important; align-items:center!important; gap:10px!important; color:#233a4a!important; }
+  #product .product-carousel-controls button { display:grid!important; place-items:center!important; width:38px!important; height:38px!important; border:1px solid rgba(35,58,74,.28)!important; border-radius:50%!important; background:transparent!important; color:#233a4a!important; font:400 17px/1 'Noto Sans KR',sans-serif!important; transition:background-color .25s ease,color .25s ease,border-color .25s ease,transform .25s ease!important; }
+  #product .product-carousel-controls button:hover:not(:disabled) { background:#233a4a!important; color:#f3efe8!important; border-color:#233a4a!important; transform:translateY(-1px)!important; }
+  #product .product-carousel-controls button:disabled { opacity:.38!important; cursor:default!important; }
+  #product .product-carousel-controls span { font:500 11px/1 'Noto Sans KR',sans-serif!important; letter-spacing:.1em!important; }
+  #product .product-browse-link { display:inline-flex!important; align-items:center!important; gap:12px!important; color:#233a4a!important; font:400 13px/1.4 'Noto Sans KR',sans-serif!important; text-decoration:none!important; }
+  #product .product-browse-link span { transition:transform .25s ease!important; } #product .product-browse-link:hover span { transform:translateX(4px)!important; }
+  @media(max-width:760px) { #product.product-scroll { padding:56px 20px!important; } #product .product-category-row { gap:14px!important; } #product .product-browse-link { gap:5px!important; font-size:11px!important; white-space:nowrap!important; } #product .product-sticky { gap:22px!important; } #product .product-cats { gap:24px!important; } #product .product-cats button { font-size:13px!important; } #product .product-track { grid-auto-columns:76vw!important; } #product .product-carousel-controls button { width:34px!important; height:34px!important; } }
+  @media(prefers-reduced-motion:reduce) { #product .product-window { scroll-behavior:auto!important; } #product .product-carousel-controls button,#product .product-browse-link span { transition:none!important; } }
+</style>
+<script id="home-section-order">(() => { const main=document.querySelector("main"), promotion=document.querySelector("#promotion"), products=document.querySelector("#product"), moments=document.querySelector("#moments"); if(main&&promotion&&products&&moments) main.append(promotion,products,moments); })();</script>
+<style id="organic-home-background-transitions">
+  #moments.section {
+    position:relative!important;
+    isolation:isolate!important;
+    overflow:visible!important;
+    background-color:#D9D3C7!important;
+  }
+  #moments.section::before,
+  #moments.section::after {
+    content:"";
+    position:absolute;
+    z-index:0;
+    pointer-events:none;
+    border-radius:50% 50% 0 0 / 48% 48% 0 0;
+  }
+  #moments.section::before {
+    top:0;
+    left:0;
+    width:100%;
+    height:clamp(54px,7vw,96px);
+    border-radius:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'%3E%3Cpath fill='%23f3efe8' d='M0 0H1440V34C1090 112 865 69 610 35C385 5 210 28 0 74Z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:100% 100%;
+  }
+  #moments.section::after {
+    display:none;
+  }
+  #moments .moments-heading,
+  #moments .moment-grid { position:relative; z-index:1; }
+  #moments .moments-watermark { color:#F3EFE8!important; }
+  footer#contact {
+    position:relative!important;
+    isolation:isolate!important;
+    background-color:#233a4a!important;
+    margin-top:0!important;
+    padding-top:48px!important;
+    padding-bottom:48px!important;
+  }
+  footer#contact::before {
+    display:none;
+  }
+  footer#contact > * { position:relative; z-index:1; }
+  @media(max-width:760px) {
+    #moments.section::before { height:54px; }
+    footer#contact { margin-top:0!important; padding-top:44px!important; padding-bottom:40px!important; }
+  }
+</style>
+<style id="stay-card-property-title-gowun-batang">
+  html body #stay .stay-card h3 {
+    font-family:'Gowun Batang','Noto Serif KR',serif!important;
+    font-style:normal!important;
+    font-weight:400!important;
+  }
+</style>
+<style id="stay-pagination-keyword-label-type">
+  html body #stay #stayCurrent,
+  html body #stay #stayTotal,
+  html body #stay .stay-progress-divider,
+  html body #stay #stayPrev,
+  html body #stay #stayNext,
+  html body #product #productCount,
+  html body #product #productPrev,
+  html body #product #productNext,
+  html body #promotion #promoCounter,
+  html body #promotion #promoPrev,
+  html body #promotion #promoNext,
+  html body #promotion .promo-counter,
+  html body #promotion .promo-arrow,
+  body #stay .stay-progress:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+  body #stay .stay-progress:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) *,
+  body #stay .slider-controls button:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+  html body #product .product-carousel-controls span,
+  html body #product .product-carousel-controls button {
+    font:italic 400 12px/1 Georgia,'Times New Roman',serif!important;
+    letter-spacing:.13em!important;
+    font-variant-numeric:lining-nums!important;
+  }
+</style>
+<style id="stay-product-pagination-match-promo">
+  html body main #stay .slider-controls .stay-progress:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+  html body main #stay .slider-controls .stay-progress:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) *,
+  html body main #stay .slider-controls button#stayPrev,
+  html body main #stay .slider-controls button#stayNext,
+  html body main #product .product-carousel-controls span#productCount,
+  html body main #product .product-carousel-controls button#productPrev,
+  html body main #product .product-carousel-controls button#productNext,
+  html body main #promotion #promoCounter,
+  html body main #promotion button#promoPrev,
+  html body main #promotion button#promoNext {
+    font:italic 400 12px/1 Georgia,'Times New Roman',serif!important;
+    font-weight:400!important;
+    letter-spacing:.13em!important;
+    font-variant-numeric:lining-nums!important;
+    font-synthesis:style!important;
+  }
+</style>
+<style id="home-slider-chevron-arrows">
+  #stay .slider-controls button .slider-chevron,
+  #product .product-carousel-controls button .slider-chevron,
+  #promotion .promo-arrow .slider-chevron {
+    display:inline-block!important;
+    font:300 21px/1 'Noto Sans KR',sans-serif!important;
+    letter-spacing:0!important;
+    font-variant-numeric:normal!important;
+    transform:translateY(-1px);
+    transition:transform .24s cubic-bezier(.2,.7,.2,1)!important;
+  }
+  #stay .slider-controls button:hover:not(:disabled) .slider-chevron,
+  #product .product-carousel-controls button:hover:not(:disabled) .slider-chevron,
+  #promotion .promo-arrow:hover:not(:disabled) .slider-chevron { transform:translateY(-1px) scale(1.12)!important; }
+</style>
+<style id="keyword-tabs-force-product-font">
+  html body main #keyword .keyword-tabs button:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+  html body main #product .product-cats button {
+    font:400 15px/1.4 'Noto Sans KR',sans-serif!important;
+    font-size:15px!important;
+    font-synthesis:none!important;
+  }
+  @media(max-width:760px) {
+    html body main #keyword .keyword-tabs button:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b),
+    html body main #product .product-cats button {
+      font-size:14px!important;
+    }
+  }
+</style>
+<style id="product-card-title-detail-parity">
+  /* Match product detail title styling while retaining the card's existing typeface and size. */
+  html body main #product .product-card .product-title-row h3:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) {
+    color: #233a4a !important;
+    font-family: 'Gowun Batang', 'Noto Serif KR', serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1.35 !important;
+    letter-spacing: -.04em !important;
+    text-shadow: none !important;
+    text-transform: none !important;
+  }
+</style>
+<style id="desktop-layout-110">
+@media (min-width:1100px) {
+  html { overflow-x:clip; }
+  body { zoom:1; width:100%!important; margin:0!important; }
+  .topbar, footer#contact { width:100%!important; }
+  :root { --page-gutter:15vw !important; }
+  #home .hero-copy h1,
+  #home .hero-copy .hero-line-nowrap,
+  #stay .section-heading h2,
+  #stay .section-heading .intro,
+  #stay .stay-card h3,
+  #product .product-intro h2,
+  #product .product-intro .intro,
+  #product .product-card .product-title-row h3,
+  #moments .moments-heading h2,
+  #moments .moments-heading .intro { white-space:nowrap!important; }
+}
+</style><style id="shared-header-menu-type-final">
+@media (min-width:761px) {
+  body .topbar .nav > a:not(#font-hierarchy-guard-a):not(#font-hierarchy-guard-b) {
+    font-family:'Noto Sans KR',sans-serif!important;
+    font-size:13px!important;
+    font-weight:600!important;
+    line-height:1.4!important;
+    letter-spacing:.08em!important;
+  }
+}
+</style><style id="main-page-description-type-unification">
+  #keyword.section > .keyword-intro,
+  #keyword .tab-copy > p,
+  #stay .section-heading .intro,
+  #stay .stay-card .stay-description,
+  #product .product-intro .intro,
+  #moments .moments-heading .intro {
+    font-family:'Gowun Batang','Noto Serif KR',serif!important;
+    font-size:15px!important;
+    font-weight:400!important;
+    line-height:1.8!important;
+    letter-spacing:normal!important;
+    color:#5d666b!important;
+  }
+  @media(max-width:760px) {
+    #keyword.section > .keyword-intro,
+    #keyword .tab-copy > p,
+    #stay .section-heading .intro,
+    #stay .stay-card .stay-description,
+    #product .product-intro .intro,
+    #moments .moments-heading .intro {
+      font-size:14px!important;
+      line-height:1.8!important;
+    }
+  }
+</style><style id="side-menu-english-only-layout">
+  #sideMenu .side-menu-item { grid-template-columns:minmax(0,1fr)!important; }
+  #sideMenu .side-menu-primary { font-size:14px!important; letter-spacing:.14em!important; }
+</style><style id="got-shared-design-system-final">
+  :root {
+    --page-gutter:clamp(24px,5.5vw,92px)!important;
+    --motion-ease:cubic-bezier(.22,.61,.36,1);
+    --motion-duration:640ms;
+    --type-copy:'Gowun Batang','Noto Serif KR',serif;
+    --type-ui:'Pretendard','Noto Sans KR',sans-serif;
+  }
+  @media(min-width:1100px) {
+    :root { --page-gutter:clamp(48px,6vw,112px)!important; }
+  }
+  @media(max-width:760px) {
+    :root { --page-gutter:20px!important; }
+  }
+  html { scroll-behavior:smooth; }
+  #keyword.section > .keyword-intro,
+  #keyword .tab-copy > p,
+  #stay .section-heading .intro,
+  #stay .stay-card .stay-description,
+  #product .product-intro .intro,
+  #moments .moments-heading .intro,
+  #keyword-detail > .recommend .recommend-heading > p,
+  .more-products .product-heading > p,
+  #order .product-copy {
+    font-family:var(--type-copy)!important;
+    font-size:15px!important;
+    font-weight:400!important;
+    line-height:1.8!important;
+    letter-spacing:normal!important;
+    color:#5d666b!important;
+  }
+  @media(max-width:760px) {
+    #keyword.section > .keyword-intro,
+    #keyword .tab-copy > p,
+    #stay .section-heading .intro,
+    #stay .stay-card .stay-description,
+    #product .product-intro .intro,
+    #moments .moments-heading .intro,
+    #keyword-detail > .recommend .recommend-heading > p,
+    .more-products .product-heading > p,
+    #order .product-copy {
+      font-size:14px!important;
+      line-height:1.8!important;
+    }
+  }
+  body.motion-ready .scroll-reveal,
+  body.aos-ready .aos-reveal {
+    transition:opacity var(--motion-duration) var(--motion-ease),transform var(--motion-duration) var(--motion-ease)!important;
+  }
+  body.motion-ready .scroll-reveal { transform:translateY(10px)!important; }
+  body.motion-ready .scroll-reveal.is-visible { transform:translateY(0)!important; }
+  body.motion-ready .scroll-reveal[data-reveal-order="1"] { transition-delay:50ms!important; }
+  body.motion-ready .scroll-reveal[data-reveal-order="2"] { transition-delay:100ms!important; }
+  body.motion-ready .scroll-reveal[data-reveal-order="3"],
+  body.motion-ready .scroll-reveal[data-reveal-order="4"],
+  body.motion-ready .scroll-reveal[data-reveal-order="5"] { transition-delay:150ms!important; }
+  .product-marquee:hover .product-marquee-track,
+  .product-marquee:focus-within .product-marquee-track { animation-play-state:paused!important; }
+  @media(prefers-reduced-motion:reduce) {
+    html { scroll-behavior:auto!important; }
+    body.motion-ready .scroll-reveal,
+    body.aos-ready .aos-reveal { opacity:1!important;transform:none!important;transition:none!important; }
+    .product-marquee-track { animation:none!important; }
+  }
+</style></body>
 
 </html>
 
